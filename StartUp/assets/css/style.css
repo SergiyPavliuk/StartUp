@@ -864,6 +864,14 @@ p {
 .clients .swiper-container {
   margin-top: 50px;
 }
+@media (max-width: 768px) {
+  .clients {
+    padding: 0 0 100px 0;
+  }
+  .clients [class^="col-"] {
+    padding-bottom: 20px;
+  }
+}
 .contact {
   position: relative;
   overflow: hidden;
