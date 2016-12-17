@@ -1,0 +1,157 @@
+//forms, buttons, dialogs etc.
+.line {
+    &:after {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color: @font;
+        &:extend(.line-margin);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.btn {
+    border: none;
+    font: 400 1.143em / 24px Montserrat;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 17px 33px;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    border-radius: 0;
+    .transition();
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        .transition();
+    }
+} //btn
+.btn-1 {
+    border: 2px solid @font-w;
+    color: @font-w;
+}
+
+.btn-1c {
+    &:after {
+        width: 0%;
+        height: 103%;
+        top: -2%;
+        left: -1%;
+        background: @font-w;
+    }
+    &:hover,
+    &:active {
+        color: @st-red;
+    }
+    &:hover:after,
+    &:active:after {
+        width: 102%;
+    }
+} //btn-1c
+.works-overlay {
+    .btn {
+        margin: 0;
+        background: @font-w;
+        border: none;
+        font: 400 1em / 24px RobotoSlab;
+        padding: 15px 20px;
+        [class^="icon-"] {
+            margin-left: 12px;
+        }
+        &:after {
+            z-index: -1;
+        }
+    }
+    .btn-1 {
+        border: none;
+        color: @st-red;
+    }
+    .btn-1c {
+        &:after {
+            background: @st-red;
+        }
+        &:hover,
+        &:active {
+            color: @font-w;
+            z-index: 1;
+        }
+    }
+}
+
+.call-to {
+    .btn {
+        font: 400 1.286em / 24px RobotoSlab;
+    }
+}
+
+.blogs {
+    button {
+        border: none;
+        background: none;
+        font: 700 0.929em / 24px RobotoSlab;
+        color: @date-color;
+        margin-top: 15px;
+    }
+}
+
+.contact {
+    input,
+    textarea {
+        &:extend(.text-uppercase);
+        color: @font;
+        font: 400 0.857em / 20px RobotoSlab;
+        padding: 16px;
+        border: 1px solid @font;
+        &:focus {
+            border: 1px solid @st-red
+        }
+    }
+    input {
+        width: 45%;
+        margin: 20px 30px 0 0;
+        &:focus {
+            border: 1px solid @st-red;
+        }
+    }
+    textarea {
+        margin-top: 20px;
+        width: 95%;
+        height: 7.286em;
+    }
+    :focus::-webkit-input-placeholder {
+        color: transparent
+    }
+    :focus::-moz-placeholder {
+        color: transparent
+    }
+    :focus:-moz-placeholder {
+        color: transparent
+    }
+    :focus:-ms-input-placeholder {
+        color: transparent
+    }
+    input[type="submit"]{
+        color: @font;
+        width: 25%;
+        &:hover,&:active{
+            border: 1px dashed @st-red;
+            color: @st-red;
+        }
+    }
+    @media (max-width:1200px) {
+        input,
+        textarea,input[type="submit"] {
+            width: 100%;
+        }
+        textarea {
+            margin-left: 0;
+        }
+    }
+}
