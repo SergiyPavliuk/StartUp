@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- Import main styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--Add favicon-->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,6 +26,13 @@
 </head>
 
 <body>
+   <!--Loader-->
+    <div id="loader-wrapper" style="display:none">
+        <div class="loader-content">
+            <div class="load"><img src="assets/img/loader.gif" alt="loader"></div>
+            <div class="title">Loading...</div>
+        </div>
+    </div>
     <header class="site-header" id="home">
         <nav class="site-nav navi">
             <div class="container">
@@ -363,7 +372,7 @@
             <li><a href="#" class="google"><span class="icon-google-plus"></span></a></li>
             <li><a href="#" class="linkedin"><span class="icon-linkedin"></span></a></li>
         </ul>
-        <p class="text-uppercase"> 2015 Startup, Designed by ShapedTheme</p>
+        <p class="text-uppercase">&copy; 2016 Startup, Designed by ShapedTheme</p>
     </footer>
     <!-- jQuery for older IE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -1,6 +1,13 @@
 $(function () {
     /*============================*/
-    /* 01 - Click menu */
+    /* 01 - function on page load */
+    /*============================*/
+    $(window).load(function () {
+        $('body').addClass('loaded');
+        $('#loader-wrapper').fadeOut(500);
+    });
+    /*============================*/
+    /* 02 - Click menu */
     /*============================*/
     $(window).resize(function () {
         var windW = $(window).width();
@@ -14,7 +21,7 @@ $(function () {
     });
 
     /*============================*/
-    /* 02 - SCROll */
+    /* 03 - SCROll */
     /*============================*/
     var $menu = $(".site-nav");
 
@@ -27,7 +34,7 @@ $(function () {
     });
 
     /*============================*/
-    /* 03 - Swiper */
+    /* 04 - Swiper */
     /*============================*/
     var mySwiperAboutSlider = new Swiper('.about .swiper-container', {
         nextButton: '.swiper-button-next',
@@ -64,7 +71,7 @@ $(function () {
     });
 
     /*============================*/
-    /* 04 - ISOTOPE */
+    /* 05 - ISOTOPE */
     /*============================*/
 
     var $container = $('.grid').isotope({
@@ -83,7 +90,7 @@ $(function () {
         });
     });
     /*============================*/
-    /* 05 - Scrollt2id */
+    /* 06 - Scrollt2id */
     /*============================*/
     $("a[href*='#']").mPageScroll2id();
 });
