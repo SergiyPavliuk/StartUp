@@ -41,6 +41,7 @@
 }
 .str-padding,
 .services,
+.about,
 .works,
 .call-to .text-call,
 .blogs,
@@ -334,6 +335,9 @@ h4 {
   color: #555555;
   line-height: 24px;
 }
+h2 {
+  font-size: 1.429em;
+}
 p {
   font-family: 'RobotoSlab';
   font-weight: 400;
@@ -551,9 +555,6 @@ p {
   position: relative;
   overflow: hidden;
 }
-.services .services-heading {
-  font-size: 1.429em;
-}
 .services .services-description {
   font-size: 1.250em;
 }
@@ -583,7 +584,6 @@ p {
 }
 .about {
   background-color: #f8f8f8;
-  padding-top: 95px;
   position: relative;
   overflow: hidden;
 }

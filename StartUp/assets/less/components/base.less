@@ -1,17 +1,23 @@
 //basic tags and general rules
-h1,h2,h3,h4{
+h1,h2,h3,h4 {
     font-family: 'Montserrat';
     font-weight: 400;
-    color:@font;
+    color: @font;
     line-height: 24px;
 }
-p{
+
+h2 {
+    font-size: 1.429em;
+}
+
+p {
     font-family: 'RobotoSlab';
     font-weight: 400;
     color: @font;
 }
-[class^="col-"]{
-    @media screen and (max-width: 1199px){
+
+[class^="col-"] {
+    @media screen and (max-width: 1199px) {
         margin-top: 50px;
     }
 }
